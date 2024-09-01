@@ -12,7 +12,10 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
-
+* a{
+    text-decoration: none;
+    color: #666;
+}
 html,body {
     width: 100%;
     height: 100%;
@@ -26,6 +29,9 @@ html,body {
     background-color: #ebebeb;
 }
 #nav {
+    background: #ebebebb9;
+    position: fixed;
+    z-index: 999;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -75,6 +81,7 @@ font-weight: 600;
 }
 
 .container {
+    margin-top: 5vw;
     height: calc(110% - 100px);
     width: 100%;
     display: -webkit-box;
@@ -426,13 +433,6 @@ svg{
     width: 83%;
 height: 73%;
 }
-#border h2{
-    position: absolute;
-    font-size: 46px;
-    color: #fff;
-    left: 0%;
-    top: 5%; 
-}
 #border h3{
     font-size: 28px;
     left: 5%;
@@ -494,51 +494,27 @@ margin-left: -60%;
             justify-content: space-evenly;
 }
 #displayflex{
-    text-align: center;
-    left: 28%;
-    top: 10%;
-    width: 55%;
-    height: 45%;
+    padding: 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
     position: relative;
-    /* text-align: center; */
-    /* display: flex; */
-    -o-object-position: center;
-       object-position: center;
 }
-#displayflex #h1 a{ 
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(254, 254, 254);
-    margin: 60px;
-}
-
-#displayflex  a{ 
-    padding: 0 80px;
-    text-align: center;
-    line-height: 45Px;
-    text-decoration: none;
-    font-size: 17px;
+#displayflex h2{
+    font-size: 46px;
     color: #fff;
-    /* margin: 65px; */
-   
+    left: 0%;
+    top: 5%; 
 }
-
-#limg{
-    display: inline;
-    position: absolute;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    top: -55%;
-    width: 20%;
+#getintouch{
+    position: relative;
+    text-align: center;
+    color: #fff;
   
 }
-#limg img{
-    text-align: center;
-    width: 100%;
-margin: 12px;
-  bottom: 0;
+#getintouch > p{
+ margin-top: 15px;
 }
 #main #img3:hover{
     bottom: 10%;
